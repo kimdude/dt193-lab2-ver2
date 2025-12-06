@@ -8,3 +8,14 @@ exports.getAllDramas = async function(fastify) {
         throw error;
     }
 }
+
+//Adding drama
+exports.addDrama = async function(fastify, data) {
+    try {
+        const result = await model.add(fastify, data);
+        return await result
+
+    } catch(error) {
+        throw error;
+    }
+}
