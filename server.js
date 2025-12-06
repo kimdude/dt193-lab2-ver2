@@ -6,9 +6,8 @@ const fastify = require('fastify')({
 });
 
 //Routes
-fastify.get('/', async(request, reply) => {
-    return ({ hello: 'world' });
-});
+require('./routes/drama.routes');
+
 
 //Connecting to server
 const start = async() => {
