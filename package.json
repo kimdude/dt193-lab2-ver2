@@ -1,0 +1,16 @@
+{
+  "name": "ver_2",
+  "version": "1.0.0",
+  "description": "Repot innehåller källkod för ett API skapat med Hapi. API:et har CRUD funktionalitet för att hantera drama-serier i en Postgre databas.\r Grundlänken för API:et är (https://dt193g-lab2.onrender.com)[https://dt193g-lab2.onrender.com].",
+  "license": "ISC",
+  "author": "Kim Dudenhöfer",
+  "type": "commonjs",
+  "main": "install.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fastify": "^5.6.2"
+  }
+}
