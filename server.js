@@ -5,9 +5,11 @@ const fastify = require('fastify')({
     logger: true
 });
 
-//Routes
-require('./routes/drama.routes');
+//Database
+fastify.register(require('./db/db'));
 
+//Routes
+fastify.register(require('./routes/drama.routes'));
 
 //Connecting to server
 const start = async() => {
